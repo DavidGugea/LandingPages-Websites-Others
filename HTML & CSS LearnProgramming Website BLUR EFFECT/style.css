@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+.light-background{
+    background-color: #fff;
+    color: #333;
+}
+.black-background{
+    color: #fff;
+    background-color: #333;
+}
+.center{
+    text-align: center;
+    margin: auto;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.showcase::after{
+    content: ' ';
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(showcase_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: block;
+
+    filter: blur(10px);
+    transition: all 1500ms;
+    margin-bottom: 2.5%;
+}
+
+.showcase:hover::after{
+    filter: blur(0px);
+    transition: all 1500ms;
+}
+.content{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: 1;
+}
+
+.showcase-logo{
+    width: 70%;
+    height: 70%;
+}
+.showcase-title{
+    margin-left: 5%;
+}
+.showcase-text{
+    width: 70%;
+    text-align:center;
+}
+
+.showcase:hover .content{
+    filter: blur(5px);
+    transition: all 2000ms;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2.5%;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0px;
+    padding: 3%;
+}
+
+footer{
+    padding: 0.5%;
+}
+
+@media(max-width: 560px){
+    .showcase-text{
+        display: none;
+    }
+    .content{
+        top: 30%;
+        left: 10%;
+    }
+    .showcase-logo{
+        margin-left: 10%;
+    }
+    .showcase-title{
+        margin-left: 1%;
+    }
+    .showcase{
+        margin-bottom: 3%;
+    }
+    .grid-2{
+        display: block;
+    }
+    .grid-3{
+        display: block;
+    }
+    .grid-2 i{
+        margin-left: 20%;
+    }
+    .public{
+        padding: 1%;
+    }
+    .box{
+        border-bottom: 3px dashed #444;
+        margin-bottom: 1%;
+    }
+
+}
+
+@media(max-height: 500px){
+    .showcase-title{
+        display: none;
+    }
+    .showcase-text{
+        display: none;
+    }
+    .showcase-logo{
+        width: 50%;
+        height: 50%;
+        margin-left: 0%;
+    }
+    .showcase{
+        padding: 3.5%;
+    }
+    .grid-3{
+        display: block;
+    }
+}
