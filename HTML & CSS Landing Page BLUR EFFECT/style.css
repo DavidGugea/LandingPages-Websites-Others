@@ -1,0 +1,243 @@
+body{
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+} 
+
+.light-background{
+    background-color: #fff;
+    color: #333;
+}
+.dark-background{
+    background-color: #333;
+    color: #fff;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.center{
+    text-align: center;
+    margin: auto;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.navbar{
+    margin-top: 0px;
+    margin-bottom: 0%;
+    padding: 1%;
+    background-color: rgb(231, 156, 15);
+}
+.navbar-title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: #333;
+}
+.navbar-links-content{
+    margin-top: 5%;
+}
+.link-button{
+    text-transform: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+.activ-link{
+    text-transform: none;
+    text-decoration: none;
+    color: #333;
+    padding: 0.3%;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+.link-button:hover{
+    filter: blur(1px);
+    color: rgb(72, 194, 147);
+    transition: all 4000ms;
+}
+.activ-link:hover{
+    color: rgb(49, 175, 192);
+    filter: blur(5px);
+    transition: all 5000ms;
+}
+.showcase{
+    margin-bottom: 3%;
+}
+.showcase::after{
+    content: ' ';
+    height: 100vh;
+    width: 100%;
+
+    background-image: url(header_showcase.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: block;
+
+    filter: blur(10px);
+    transition: all 1500ms;
+}
+.showcase-logo{
+    width: 80%;
+    height: 80%;
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+}
+.showcase-title{
+    margin-left: 12%
+}
+.public{
+    padding: 1.2%;
+}
+footer{
+    margin: 0px;
+    padding: 0.2%;
+}
+footer p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
+.showcase:hover::after{
+    filter: blur(0px);
+    transition: all 1500ms;
+}
+.showcase:hover .content{
+    filter: blur(5px);
+    transition: all 1500ms;
+}
+.services{
+    padding: 5%;
+    margin-top: 0%;
+}
+.box{
+    border: 1px #333 solid;
+    padding: 1.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(35, 39, 4);
+    margin-bottom: 0.5%;
+    margin-right: 5%;
+    color: #fff;
+}
+.input-content{
+    padding: 3.5%;
+    background-color: #444;
+    color: #fff;
+}
+.input-content h2{
+    margin-left: 40%;
+}
+.input-content input{
+    padding: 1.5%;
+    background-color: dimgrey;
+    color: #fff;
+    border: 2px #555 solid;
+    font-family: cursive;
+}
+.Submit-button{
+    padding: 1.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    background-color: #fff;
+    border: 0px;
+}
+.Submit-button:hover{
+    background-color: #333;
+    color: #fff;
+}
+.section-logo{
+    width: 30%;
+    height:30%;
+    margin-left: 30%;
+}
+.contact-header{
+    padding: 1.5%;
+    background-color: #333;
+    margin-bottom: 3%;
+}
+.contact-logo{
+    margin-left: 35%;
+}
+.contact-section{
+    padding: 1.5%;
+}
+
+@media(max-width: 560px){
+    .grid-2{
+        display: block;
+        margin-bottom: 1%;
+    }
+    .grid-3{
+        display: block;
+        margin-bottom: 1%;
+    }
+    .navbar-title{
+        margin-left: 10%;
+    }
+    .navbar-links-content{
+        text-align: center;
+    }
+    .link-button{
+        margin-bottom: 3%;
+    }
+    .activ-link{
+        margin-bottom: 3%;
+    }
+    .showcase-title{
+        display: none;
+    }
+    .public-box{
+        padding: 1.5%;
+        border-bottom: 3px #333 dashed;
+        margin-top: 3%;
+    }
+    .showcase-logo{
+        margin-left: -30%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box{
+        padding: 5%;
+        margin-bottom: 15%;
+    }
+    .box h2{
+        margin-left: 15%;
+    }
+    .input-content h2{
+        margin-left: 25%;
+    }
+    .input-content input[type="email"]{
+        margin: 10%;
+        padding: 2%;
+    }
+    .Submit-button{
+        margin-left: 35%;
+        padding: 1.5%;
+        font-size: 1.2rem;
+    }
+    #services-logoSection{
+        padding: 5.5%;
+    }
+    .section-logo{
+        margin-left: 30%;
+    }
+
+    .contact-logo{
+        width: 30%;
+        height: 30%;
+    }
+}   
