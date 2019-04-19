@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body{
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #fff;
+    background-color: #181818;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 300;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#first-side{
+    grid: 1;
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    grid-template-rows: 5fr 1fr; 
+}
+
+/* Sign in */
+
+#signin{
+    display: grid;
+    grid-template-rows:  1fr 1fr 1fr 1fr
+}
+#signin .logo{
+    z-index: 10;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+#signin form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    justify-items: center;
+}
+.primary-btn{
+    width: 25%;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px #eb792d solid;
+    border-radius: 5px;
+    background-color: #181818;
+    color: #fff;
+    transition: all 2s
+}
+.primary-btn:hover{
+    border: 2px #fff solid;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #181818;
+    transition: all 2s;
+}
+.text-input{
+    width: 30%;
+    background-color: #181818;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    border: 2px #eb792d solid;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 2s
+}
+.text-input:hover{
+    border: 2px #f1d65b solid;
+    background-color: #fff;
+    color: #181818;
+    transition: all 2s
+}
+#signin #links{
+    display: grid;
+    text-align: center;
+}
+.secondary-btn:nth-child(2){
+    margin-top: -2%;
+}
+.secondary-btn:first{
+    margin-top: -15%
+}
+.secondary-btn{
+    color: #fff;
+    text-decoration: none
+}
+#signin .or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+#signin .or .bar{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+#signin .or span{
+    color: #ccc;
+    padding: 0 0.8rem;
+}
+.move{
+    margin-left: 42.5%;
+    margin-top: -7%;
+}
+#main-footer{
+    margin-top: -5%;
+    text-align: center;
+}
+.link{
+    color: rgb(206, 97, 25);
+}
+/* Sign in */
+
+#second-side{
+    grid:1;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center / cover;
+    justify-items: center;
+    align-items: center;
+}
+#second-side .link-2{
+    padding: 10px; 
+    background-color: #181818;
+    color: #fff;
+    text-decoration: none;
+    width: 30%;
+    text-align: center;
+    border: 2px #eb792d solid;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 2s;
+}
+#second-side .link-2:hover{
+    border: 2px #ccc01f solid;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    color: #181818;
+    color: #eb792d;
+    transition: all 2s;
+}
+
+/* Media Queries */
+@media(min-width: 1200px){
+    #first-side{
+        grid: 4;
+    }
+    #second-side{
+        grid: 6;
+    }
+}
+@media(max-width: 768px){
+    #second-side{
+        display: none;
+    }
+    #first-side{
+        display: block;
+        height: 100vh;
+        width: 100%;
+    }
+    #signin .logo{
+        margin-left: 7%;
+    }
+    #signin .or{
+        margin-left: 10%;
+    }
+    footer{
+        margin-left: 3%;
+        margin-top: 10%;
+    }
+}
