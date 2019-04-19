@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 300px;
+    background-color: #181818;
+    color: #fff;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    overflow: hidden;
+}
+#first-side{
+    grid: 1;
+}
+#second-side{
+    grid: 1;
+}
+#signin{
+    text-align: center;
+}
+#signin form{
+    margin-top: 30%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 50%;
+    row-gap: 10%;
+    margin-left: 25%;
+}
+.text-input{
+    padding: 4px;
+    background-color: #353434;
+    color: #fff;
+    border: 2px #817e7e solid;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 2s
+}
+.text-input:hover{
+    background-color: #817e7e;
+    color: rgb(80, 161, 123);
+    transition: all 2s;
+}
+.primary-btn{
+    padding: 5px;
+    width:  30%;
+    margin-left: 35%;
+    border-radius: 5px;
+    background-color: #353434;
+    color: #817e7e;
+    transition: all 2s;
+}
+#links{
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 50%;
+}
+.secondary-btn{
+    color: #fff;
+    text-decoration: none;
+}
+footer{
+    margin-top: 50%;
+    text-align: center;
+}
+.footer-link{
+    color: rgb(233, 219, 20);
+}
+#second-side{
+    height: 100vh;
+    width: 100%;
+    background-image: url("save.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#second-side h1{
+    color: #fff;
+}
+#second-side #content{
+    margin-top: -200%;
+}
+
+/* Media Quries */
+
+@media(min-width: 1200px){
+    #first-side{
+        grid: 4;
+    }
+    #second-side{
+        grid: 6;
+    }
+}
+@media(max-width: 768px){
+    body{
+        overflow: auto;
+    }
+    #second-side{
+        display: none;
+    }
+    #first-side{
+        justify-content: start;
+        margin-top: 4vh;
+    }
+    #signin .logo{
+        margin-bottom: 2vh;
+    }
+    #signin .text-input{
+        margin-bottom: 0.7rem;
+    }
+    #main-footer{
+        padding-top: 1rem;
+    }
+    #signin *{
+        margin-left: 30%;
+    }
+}
+
+/* Media Quries */
