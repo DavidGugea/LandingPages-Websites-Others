@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+}
+
+/* USUAL CLASSES */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.dark-background{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 140, 64);
+
+    font-family: cursive;
+    font-size: 15px;
+
+    padding: 20px;
+}
+.highlight{
+    display: inline;
+    color: rgb(255, 140, 64);
+}
+.link{
+    color: rgb(255, 140, 64);
+    text-transform: uppercase;
+    text-decoration: none;
+
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+
+    padding: 10px;
+}
+.current{
+    color: #f4f4f4;
+    text-transform: uppercase;
+
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+.blurry:hover{
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+    transition: all 3000ms;
+}
+.blurry-level2{display: inline;}
+.blurry-level2:hover{
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+
+    transition: all 3000ms;
+}
+/* USUAL CLASSES */
+
+/* Showcase INDEX*/ 
+#showcase{
+    display: flex;
+
+    background-color: rgb(44, 44, 44);
+    margin: 0;
+    padding: 50px;
+
+    border-bottom: rgb(255, 140, 64) 5px solid;
+}
+#showcase > div:nth-child(1){  
+    flex: 2;
+}
+#showcase nav{
+    margin-top: 25px;
+    flex: 1;
+}
+/* Showcase INDEX */
+
+/* Introduction Section INDEX*/
+section#introduction > h1, section#introduction > p{
+    margin: 0;
+}
+section#introduction{
+    height: 400px;
+    margin-top: 0;
+    
+    background-image: url("../img/working_PC.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.introduction-flex{
+    display: flex;
+    flex-direction: column;
+
+    color: #000;
+    text-align: center;
+}
+/* Introduction Section INDEX*/
+
+/* Newsletter Section INDEX*/
+section#newsletter{
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(44, 44, 44);
+    padding: 20px;
+}
+section#newsletter h1{
+    flex: 2;
+    color: rgb(255, 140, 64);
+    margin-left: 75px;
+}
+section#newsletter form{
+    flex: 1;
+    margin-top: 10px;
+}
+.newsletter-input{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 140, 64);
+
+    font-family: Helvetica;
+    font-size: 17px;
+
+    border: 0;
+    padding: 5px;
+
+    margin-right: 25px;
+}
+.newsletter-button{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 140, 64);
+
+    font-family: cursive;
+    font-size: 17px;
+
+    border: 0;
+    padding: 5px;
+}
+.newsletter-button:hover{
+    background-color: rgb(255, 140, 64);
+    color: rgb(44, 44, 44);
+
+    transition: all 5000ms;
+}
+/* Newsletter Section INDEX*/
+
+/* Boxes Section INDEX*/
+.box > img{
+    width: 150px;
+}
+.box > h3{
+    font-size: 25px;
+    color: #f4f4f4
+}
+.box > p{
+    font-family: Verdana;
+    color: #f4f4f4;
+}
+.box{
+    flex-basis: 30%;
+    text-align: center;
+}
+section#boxes{
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(44, 44, 44);
+
+    border-top: rgb(255, 140, 64) 3px solid;
+    border-bottom: rgb(255, 140, 64) 3px solid;
+
+    padding: 100px;
+}
+section#boxes > div:nth-child(1){
+    margin-left: 5%;
+}
+/* Boxes Section INDEX*/
+
+/* About Section ABOUT*/
+section#about{
+    display: flex;
+    padding: 100px;
+}
+section#about main{
+    margin-right: 300px;
+}
+/* About Section ABOUT */
+
+/* Services Section SERVICES */
+section#services{
+    display: flex;
+    padding: 70px;
+}
+section#services main{
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+section#services aside{
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 140, 64);
+    
+    height: 400px;
+    padding: 50px;
+
+    margin-top: 150px;
+
+    text-align: center;
+}
+section#services aside form{
+    display: flex;
+    flex-direction: column;
+}
+section#services aside form textarea{
+    margin-top: 5px;
+    margin-bottom: 70px;
+}
+.services-input, section#services aside form textarea{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 140, 64);
+
+    font-family: cursive;
+
+    border: 0;
+    padding: 10px;
+}
+.services-button{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 140, 64);
+
+    padding: 10px;
+    border: 0;
+
+    font-family: cursive
+}
+.services-button:hover{
+    background-color: rgb(255, 140, 64);
+    color: rgb(44, 44, 44);
+
+    transition: all 5000ms;
+}
+section#services h3{
+    color: rgb(255, 140, 64);
+}
+.service-box{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 140, 64);
+    
+    padding: 30px;
+    border: rgb(255, 140, 64) 2px solid;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* Services Section SERVICES */
+
+/* Footer */
+footer{
+    padding: 20px;
+
+    background-color:  rgb(44, 44, 44);;
+    color: rgb(255, 140, 64);
+
+    text-align: center;
+
+    font-size: 17px;
+}
+/* Footer */
